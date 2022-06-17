@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100vh;
+}
+
+.phone-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+}
+
+.phone-instagram img{
+  height: 30rem;
+}
+
+.login-instagram{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 34rem;
+  width: 35rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.logo{
+  height: 4rem;
+}
+
+.group .profile {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group:nth-child(1){
+  min-width: 19rem;
+}
+
+.instagram-login{
+  background: #0095f6;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.instagram-logout{
+  background: #0095f6;
+  margin-top: 1rem;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.instagram-login:hover,
+.instagram-logout:hover {
+  background: #38a1e7;
+}
+
+.not-account {
+  color: rgb(160, 160,160);
+  margin-bottom: 5px;
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+.get-the-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 0.785rem 0;
+}
+
+.dowload {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.app-dowload {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-size: cover;
+}
+
+@media (max-width: 1024px){
+  .wrapper-instagram{
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px){
+  .wrapper-instagram{
+    width: 90%;
+  }
+
+  .phone-instagram {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
